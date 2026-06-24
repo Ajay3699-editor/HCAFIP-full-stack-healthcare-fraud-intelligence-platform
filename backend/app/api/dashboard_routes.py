@@ -241,3 +241,65 @@ def get_schemes(db: Session = Depends(get_db)):
 def get_hospitals(db: Session = Depends(get_db)):
     hospitals = db.query(HospitalModel).all()
     return [{"hospital_id": h.hospital_id, "name": h.name, "type": h.type, "location": h.location} for h in hospitals]
+
+@router.get("/hospital-map")
+def get_hospital_map_data(
+    db: Session = Depends(get_db),
+    current_user: UserModel = Depends(require_role(["Government", "Investigator"]))
+):
+    """Calculates and returns coordinates and fraud risk metrics for each hospital."""
+    hospitals = db.query(HospitalModel).all()
+    claims = db.query(ClaimModel).all()
+
+    # Define geographical coordinates mapping for seeded hospitals
+    # Using logical coordinates around New Delhi, India
+    coordinates_map = {
+        "HOSP-001": {"latitude": 28.6139, "longitude": 77.2090},  # City Central General Hospital
+        "HOSP-002": {"latitude": 28.6304, "longitude": 77.2177},  # St. Jude Cardiac Institute
+        "HOSP-003": {"latitude": 28.5921, "longitude": 77.1953},  # Metro Children's Specialty Care
+    }
+
+    # Default random coordinator offset generator for new hospitals
+    import random
+    
+    # Pre-aggregate claims per hospital
+    hosp_claims = {}
+    for c in claims:
+        h_id = c.hospital_id
+        if h_id not in hosp_claims:
+            hosp_claims[h_id] = []
+        hosp_claims[h_id].append(c)
+
+    results = []
+    for h in hospitals:
+        coords = coordinates_map.get(h.hospital_id)
+        if not coords:
+            coords = {
+                "latitude": 28.6139 + random.uniform(-0.03, 0.03),
+                "longitude": 77.2090 + random.uniform(-0.03, 0.03)
+            }
+
+        h_claims = hosp_claims.get(h.hospital_id, [])
+        total_claims = len(h_claims)
+        
+        approved_amount = sum(c.amount for c in h_claims if c.status == "APPROVED")
+        flagged_count = sum(1 for c in h_claims if c.status == "FLAGGED")
+        blocked_amount = sum(c.amount for c in h_claims if c.status in ["FLAGGED", "REJECTED"])
+        avg_risk = sum(c.ml_risk_score for c in h_claims) / total_claims if total_claims > 0 else 0.0
+
+        results.append({
+            "hospital_id": h.hospital_id,
+            "name": h.name,
+            "type": h.type,
+            "location": h.location,
+            "latitude": coords["latitude"],
+            "longitude": coords["longitude"],
+            "total_claims": total_claims,
+            "approved_amount": round(approved_amount, 2),
+            "flagged_claims": flagged_count,
+            "blocked_amount": round(blocked_amount, 2),
+            "average_risk_score": round(avg_risk, 2)
+        })
+
+    return results
+

@@ -9,7 +9,8 @@ import {
   Sun, 
   Moon, 
   TrendingUp, 
-  UserPlus
+  UserPlus,
+  Map
 } from 'lucide-react';
 import Login from './components/Login';
 import GovernmentDashboard from './components/GovernmentDashboard';
@@ -18,6 +19,7 @@ import HospitalDashboard from './components/HospitalDashboard';
 import PatientDashboard from './components/PatientDashboard';
 import GovSealSVG from './components/GovSealSVG';
 import GovBanner from './components/GovBanner';
+import FraudMap from './components/FraudMap';
 
 
 function App() {
@@ -85,6 +87,7 @@ function App() {
           { id: 'overview', label: 'System Overview', icon: TrendingUp },
           { id: 'claims', label: 'Manage Claims', icon: FileText },
           { id: 'patients', label: 'Patient Registry', icon: UserPlus },
+          { id: 'map', label: 'Fraud Hotspots Map', icon: Map },
         ];
       case 'Investigator':
         return [
@@ -108,6 +111,9 @@ function App() {
   const renderActiveContent = () => {
     switch (user.role) {
       case 'Government':
+        if (activeTab === 'map') {
+          return <FraudMap token={token} />;
+        }
         return <GovernmentDashboard activeTab={activeTab} token={token} user={user} />;
       case 'Investigator':
         return <InvestigatorDashboard activeTab={activeTab} token={token} user={user} />;
