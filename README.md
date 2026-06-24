@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Banner GIF -->
-<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/80728820-e06b-4f96-9c9e-9df46f0cc0a5" width="700" alt="HCAFIP Banner" />
+<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/80728820-e06b-4f96-9c9e-9df46f0cc0a5" width="800" alt="HCAFIP Banner" />
 
 # 🏥 HCAFIP
 ### Healthcare Claim Assurance & Fraud Intelligence Portal
@@ -17,11 +17,16 @@
 
 <br/>
 
-<!-- Fun Badges -->
-<img src="https://forthebadge.com/images/badges/built-with-love.svg" width="125" alt="built with love" /> &nbsp;
-<img src="https://forthebadge.com/images/badges/built-with-swag.svg" width="125" alt="built with swag" /> &nbsp;
-<img src="https://forthebadge.com/images/badges/open-source.svg" width="125" alt="open source" /> &nbsp;
-<img src="https://forthebadge.com/images/badges/made-with-markdown.svg" width="180" alt="made with markdown" />
+<!-- Badges from User -->
+<div align="center">
+  Made with 💜 by Anmol
+  <br/>
+  <a href="https://github.com/Anmol-Baranwal/GIFs-For-Readme"><img src="https://forthebadge.com/images/badges/built-with-love.svg" width="130" alt="made with love markdown badge" ></a>
+  <a href="https://github.com/Anmol-Baranwal/GIFs-For-Readme"><img src="https://forthebadge.com/images/badges/built-with-swag.svg" width="130" alt="made with swag markdown badge"></a>
+  <a href="https://github.com/Anmol-Baranwal/GIFs-For-Readme"><img src="https://forthebadge.com/images/badges/open-source.svg" width="130" height="30" alt="open source markdown badge"></a>  
+  <br/>
+  <a href="https://github.com/Anmol-Baranwal/GIFs-For-Readme"><img src="https://forthebadge.com/images/badges/made-with-markdown.svg" width="230" height="30" alt="made with markdown badge"></a>
+</div>
 
 <br/>
 
@@ -41,29 +46,36 @@
 
 > *"Every single year, billions of rupees in public healthcare funds—hard-earned money paid by taxpayers, meant for the poorest citizens to receive life-saving surgeries and critical treatments—disappear into the black hole of healthcare fraud. Hospitals submit bills for procedures that never occurred. Patient identities are cloned to exhaust benefit balances. While corrupt parties get rich, honest citizens are denied care when they need it most."*
 
-This is not just a corporate problem. It is a **human problem** that affects families, communities, and lives. 
+This is not just a corporate problem. It is a **human problem** that affects families, communities, and lives.
 
-As a developer, I wanted to build more than just another portfolio app. I wanted to build a **shield** for public funds. **HCAFIP** was born out of a desire to harness modern AI and Machine Learning to detect fraudulent insurance claims **in real time**, before the government money is disbursed. 
+### The Creator's Vision
+As a developer, I wanted to build more than just another portfolio app. I wanted to build a **shield** for public funds. **HCAFIP** was born out of a desire to harness modern AI and Machine Learning to detect fraudulent insurance claims **in real time**, before government money is disbursed. 
 
 By building this, my goal is to show how technology can act as an automated guardian of public funds, ensuring every rupee goes exactly where it is needed: **saving lives.**
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/74038190/212749171-b84692a8-2b04-4e3b-93ca-ac14705da224.gif" width="500" alt="Coding Vibe"/>
+  <img src="https://user-images.githubusercontent.com/74038190/212749171-b84692a8-2b04-4e3b-93ca-ac14705da224.gif" width="500" alt="Coding Vibe"/>
 </div>
 
 ---
 
-## 🎬 Project Walkthrough & Live Demo
+## 🎬 Project Walkthrough & Video Demo
 
-> 📽️ **Watch the Full Video Walkthrough** — *See HCAFIP in action detecting fraud, scanning bills, and interacting with Gemini AI:*
+Check out the full application walkthrough showing HCAFIP in action detecting fraud, scanning bills, and interacting with Gemini AI:
 
+### 📺 Watch the Total Project Walkthrough Video:
 [![Watch Demo](https://img.shields.io/badge/▶_Watch_Full_Demo_Video-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://hcafip-full-stack-healthcare-fraud.vercel.app/)
 
-### 🔑 Try It Live Now:
-The live application is fully seeded with demo data. Open the **[Live Demo](https://hcafip-full-stack-healthcare-fraud.vercel.app/)** and login using any of the roles below:
+*(Click the badge above to watch the full project in action, explaining each user role and fraud detection flow!)*
+
+---
+
+## 👥 Multi-Role User Simulation
+
+The application features a robust Role-Based Access Control (RBAC) system. You can try the **[Live Demo](https://hcafip-full-stack-healthcare-fraud.vercel.app/)** with these accounts:
 
 | Role | Username | Password | Purpose & Capabilities |
-|---|---|---|---|
+| :--- | :--- | :--- | :--- |
 | 🏛️ **Government Admin** | `gov_admin` | `admin123` | High-level analytics, budget consumption maps, patient registry, claim approval/rejection |
 | 🔍 **Fraud Investigator** | `investigator` | `intel123` | Interactive fraud queue, real-time alert triage, and **Gemini AI chatbot** for specific claim investigations |
 | 🏥 **Hospital Provider** | `hosp_city` | `city123` | Submit claims, use **OCR Bill Scanning** to parse files, and view recent submissions |
@@ -73,22 +85,18 @@ The live application is fully seeded with demo data. Open the **[Live Demo](http
 
 ## 🚀 Key Features
 
-<div align="center">
-<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="80" alt="Features"/>
-</div>
-
 ### 🤖 Intelligent Fraud Detection
-- **Machine Learning Risk Engine:** Every claim is analyzed by a scikit-learn model upon submission, producing a probability score (0-100) indicating the likelihood of fraud.
-- **Rule-Based Flags:** Flags claims instantly for common red flags, such as duplicate procedures within a short period, exceeding maximum category limits, or mismatched patient records.
-- **Google Gemini AI Assistant:** Integrated chat interface allowing fraud investigators to consult Gemini on complex claims. Gemini parses the claim data, compares historical patient files, and provides an explainable fraud report.
+*   **Machine Learning Risk Engine:** Every claim is analyzed by a scikit-learn model upon submission, producing a probability score (0-100) indicating the likelihood of fraud.
+*   **Rule-Based Flags:** Flags claims instantly for common red flags, such as duplicate procedures within a short period, exceeding maximum category limits, or mismatched patient records.
+*   **Google Gemini AI Assistant:** Integrated chat interface allowing fraud investigators to consult Gemini on complex claims. Gemini parses the claim data, compares historical patient files, and provides an explainable fraud report.
 
 ### 🧾 OCR Medical Bill Scanner
-- Hospitals can simply upload a receipt or bill photo.
-- The built-in OCR service (powered by Gemini Vision) extracts patient name, treatment type, cost, and dates, pre-filling the claim form automatically to eliminate manual errors and falsified text inputs.
+*   Hospitals can upload a receipt or bill photo.
+*   The built-in OCR service (powered by Gemini Vision) extracts patient name, treatment type, cost, and dates, pre-filling the claim form automatically to eliminate manual errors and falsified text inputs.
 
 ### 📊 Real-Time Analytics & Dashboards
-- **Dynamic Charts:** Displays monthly spend trends, category-wise distributions, fraud alert rates, and hospital rankings.
-- **Scheme Utilization Tracking:** Monitors public health scheme balances in real-time, preventing over-drafting and leakage.
+*   **Dynamic Charts:** Displays monthly spend trends, category-wise distributions, fraud alert rates, and hospital rankings.
+*   **Scheme Utilization Tracking:** Monitors public health scheme balances in real-time, preventing over-drafting and leakage.
 
 ---
 
@@ -100,7 +108,7 @@ The live application is fully seeded with demo data. Open the **[Live Demo](http
                      │  React + Vite | Tailwind & Vanilla CSS  │
                      │  RBAC: Admin | Investigator | Hosp | Pat│
                      └────────────────────┬────────────────────┘
-                                          │ HTTPS REST API + JWT
+                                           │ HTTPS REST API + JWT
                      ┌────────────────────▼────────────────────┐
                      │            BACKEND (Render)             │
                      │ FastAPI | JWT Guard | Pandas Analytics  │
@@ -115,38 +123,15 @@ The live application is fully seeded with demo data. Open the **[Live Demo](http
 
 ---
 
-## 🛠️ Tech Stack & Moving Logos
-
-<div align="center">
-<img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="70" alt="HTML" />
-<img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="70" alt="CSS" />
-<img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif" width="70" alt="JS" />
-<img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="70" alt="React" />
-<img src="https://user-images.githubusercontent.com/74038190/212257463-4d082cb4-7483-4eaf-bc25-6dde2628aabd.gif" width="70" alt="Git" />
-<img src="https://user-images.githubusercontent.com/74038190/212257460-738ff738-247f-4445-a718-cdd0ca76e2db.gif" width="70" alt="Python" />
-<img src="https://user-images.githubusercontent.com/74038190/212281756-450d3ffa-9335-4b98-a965-db8a18fee927.gif" width="70" alt="VSCode" />
-</div>
-
-| Layer | Component | Technologies Used |
-|---|---|---|
-| **Frontend** | User Interface | React 18, Vite, Lucide Icons, Custom CSS Variables |
-| **Backend** | REST API Service | Python 3.11, FastAPI, Uvicorn |
-| **Database** | Persistence & ORM | SQLAlchemy, SQLite (Development), PostgreSQL (Production) |
-| **Intelligence** | Machine Learning | Scikit-Learn, Pandas, NumPy |
-| **Generative AI** | Assistant & OCR | Google Gemini API (gemini-2.5-flash) |
-| **Security** | Authentication | PyJWT, Passlib (BCrypt hashing) |
-
----
-
 ## ⚡ Step-by-Step Local Setup
 
-Follow these steps to get HCAFIP running on your local machine:
+Follow this comprehensive process to run HCAFIP on your local machine:
 
 ### 1. Prerequisites
 Ensure you have the following installed:
-- Python 3.11+
-- Node.js 18+
-- A free **[Gemini API Key](https://aistudio.google.com/app/apikey)** from Google AI Studio.
+*   **Python 3.11+**
+*   **Node.js 18+**
+*   A free **[Gemini API Key](https://aistudio.google.com/app/apikey)** from Google AI Studio.
 
 ### 2. Clone the Repository
 ```bash
@@ -170,11 +155,13 @@ pip install -r requirements.txt
 copy .env.example .env       # On Windows
 # cp .env.example .env       # On Mac/Linux
 ```
+
 Open the newly created `.env` file and insert your Gemini API Key:
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
 JWT_SECRET=your_jwt_signing_secret_here
 ```
+
 Now, start the backend server:
 ```bash
 uvicorn app.main:app --host 127.0.0.1 --port 8001 --reload
@@ -195,26 +182,25 @@ npm run dev
 ```
 > The React app will start at: **http://localhost:5173**
 
----
-
-## 🔭 Future Scope: Taking HCAFIP to the Next Level
-
-This platform was built to serve as a rock-solid, production-grade foundation. For students, contributors, or engineers looking to take this to a real-world enterprise deployment, here is the roadmap:
-
-- 🔒 **Aadhaar / Identity Verification Integration:** Add multi-factor authentication linking patient logins to official government IDs (e.g., Aadhaar, DigiLocker) to prevent medical identity theft.
-- 🔗 **Blockchain Audit Trail:** Log all claim approval and rejection events onto an immutable blockchain ledger (like Hyperledger Fabric), ensuring government auditors can trust every decision history.
-- 🗺️ **Geographic Heatmaps:** Implement a Leaflet or Google Maps dashboard view highlighting clusters of high-risk claims, pinpointing specific hospitals committing systematic geographic fraud.
-- 📊 **Big Data Pipelines:** Upgrade the backend database from SQLite to PostgreSQL and build Apache Spark/Kafka pipelines to scan millions of claims per second.
-- 🇮🇳 **Multi-Lingual support:** Localize the portal in Hindi, Telugu, Tamil, and other regional languages to make it accessible to local administrative bodies.
-
----
-
-## 🧪 Run Tests
+### 5. Run Automated Tests
 Keep the code robust by running the automated pytest suite:
 ```bash
 cd backend
 pytest tests/ -v
 ```
+
+---
+
+## 🔭 Future Scope (Real-World Extensions)
+
+This platform was built to serve as a rock-solid, production-grade foundation. For students, contributors, or engineers looking to take this to a real-world enterprise deployment, here is the roadmap:
+
+*   🔒 **Aadhaar / Identity KYC Integration:** Add multi-factor authentication linking patient logins to official government IDs (e.g., Aadhaar, DigiLocker) to prevent medical identity theft.
+*   🔗 **Blockchain Audit Trail:** Log all claim approval and rejection events onto an immutable blockchain ledger (like Hyperledger Fabric), ensuring government auditors can trust every decision history.
+*   🗺️ **Geographic Fraud Heatmaps:** Implement a Leaflet or Google Maps dashboard view highlighting clusters of high-risk claims, pinpointing specific hospitals committing systematic geographic fraud.
+*   📊 **Big Data Pipelines:** Upgrade the backend database from SQLite to PostgreSQL and build Apache Spark/Kafka pipelines to scan millions of claims per second.
+*   🇮🇳 **Multi-Lingual support:** Localize the portal in Hindi, Telugu, Tamil, and other regional languages to make it accessible to local administrative bodies.
+*   📱 **Patient Alert System:** Automatic SMS or WhatsApp alerts to patients immediately when a claim is initiated under their ID to verify they are actually at the hospital.
 
 ---
 
@@ -225,11 +211,11 @@ pytest tests/ -v
 ### Built with passion to protect government healthcare funds 💙
 *"The best code you can write is code that makes the world a little more honest."*
 
-<br>
+<br/>
 
 <img src="https://user-images.githubusercontent.com/74038190/212284136-03988914-d899-44b4-b1d9-4eeccf656e44.gif" width="180" alt="dino" />
 
-<br>
+<br/>
 
 **If this project inspired you or helped you, please give it a ⭐ star!**
 
