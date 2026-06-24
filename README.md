@@ -19,7 +19,7 @@
 
 <!-- Branding badges from User -->
 <div align="center">
-  <h4>Made with 💜 by Anmol</h4>
+  <h4>Made with 💜 by Kante Ajay Babu</h4>
   <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" width="40px" /> &nbsp; **Geospatial & AI-Powered Fraud Intelligence** &nbsp; <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" width="40px" />
   <br/><br/>
   <a href="https://github.com/Ajay3699-editor/HCAFIP-full-stack-healthcare-fraud-intelligence-platform"><img src="https://forthebadge.com/images/badges/built-with-love.svg" width="125" alt="made with love" ></a>  
