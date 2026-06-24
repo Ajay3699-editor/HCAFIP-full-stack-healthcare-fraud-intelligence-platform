@@ -6,7 +6,7 @@
 # 🏥 HCAFIP
 ### Healthcare Claim Assurance & Fraud Intelligence Portal
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&width=600&lines=AI-Powered+Healthcare+Fraud+Detection;Real-Time+Risk+Scoring+with+ML;Gemini+AI+Fraud+Investigation;Saving+Public+Money+and+Taxpayer+Funds" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&width=600&lines=AI-Powered+Healthcare+Fraud+Detection;Real-Time+Risk+Scoring+with+ML;Geospatial+Fraud+Heatmaps;Gemini+AI+Fraud+Investigation;Saving+Public+Money+and+Taxpayer+Funds" alt="Typing SVG" />
 
 <br/>
 
@@ -17,24 +17,25 @@
 
 <br/>
 
-<!-- Badges from User -->
+<!-- Branding badges from User -->
 <div align="center">
-  Made with 💜 by Anmol
+  <h4>Made with 💜 by Anmol</h4>
+  <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" width="40px" /> &nbsp; **Geospatial & AI-Powered Fraud Intelligence** &nbsp; <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" width="40px" />
+  <br/><br/>
+  <a href="https://github.com/Ajay3699-editor/HCAFIP-full-stack-healthcare-fraud-intelligence-platform"><img src="https://forthebadge.com/images/badges/built-with-love.svg" width="125" alt="made with love" ></a>  
+  <a href="https://github.com/Ajay3699-editor/HCAFIP-full-stack-healthcare-fraud-intelligence-platform"><img src="https://forthebadge.com/images/badges/built-with-swag.svg" width="125" alt="made with swag"></a>
+  <a href="https://github.com/Ajay3699-editor/HCAFIP-full-stack-healthcare-fraud-intelligence-platform"><img src="https://forthebadge.com/images/badges/open-source.svg" width="125" alt="open source"></a>  
   <br/>
-  <a href="https://github.com/Anmol-Baranwal/GIFs-For-Readme"><img src="https://forthebadge.com/images/badges/built-with-love.svg" width="130" alt="made with love markdown badge" ></a>
-  <a href="https://github.com/Anmol-Baranwal/GIFs-For-Readme"><img src="https://forthebadge.com/images/badges/built-with-swag.svg" width="130" alt="made with swag markdown badge"></a>
-  <a href="https://github.com/Anmol-Baranwal/GIFs-For-Readme"><img src="https://forthebadge.com/images/badges/open-source.svg" width="130" height="30" alt="open source markdown badge"></a>  
-  <br/>
-  <a href="https://github.com/Anmol-Baranwal/GIFs-For-Readme"><img src="https://forthebadge.com/images/badges/made-with-markdown.svg" width="230" height="30" alt="made with markdown badge"></a>
+  <a href="https://github.com/Ajay3699-editor/HCAFIP-full-stack-healthcare-fraud-intelligence-platform"><img src="https://forthebadge.com/images/badges/made-with-markdown.svg" width="220" alt="made with markdown"></a>
 </div>
 
 <br/>
 
-<!-- Tech badges -->
+<!-- Tech Badges -->
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-CC2927?style=flat-square&logo=databricks&logoColor=white)
+![Leaflet](https://img.shields.io/badge/Leaflet_Map-199900?style=flat-square&logo=leaflet&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Gemini_AI-4285F4?style=flat-square&logo=google&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 
@@ -42,11 +43,23 @@
 
 ---
 
-## 💡 The Human Story: Why I Built HCAFIP
+## 📌 Table of Contents
+* [💡 The Human Story: Why I Built This](#-the-human-story-why-i-built-this)
+* [🎬 Project Walkthrough & Video Demo](#-project-walkthrough--video-demo)
+* [👥 User Simulation & Interactive Roles](#-user-simulation--interactive-roles)
+* [🚀 Key Features](#-key-features)
+* [🏗️ System Architecture Flow](#%EF%B8%8F-system-architecture-flow)
+* [⚡ Step-by-Step Local Setup](#-step-by-step-local-setup)
+* [🔭 Future Scope (Real-World Extensions)](#-future-scope-real-world-extensions)
+* [🧪 Automated Tests](#-automated-tests)
 
-> *"Every single year, billions of rupees in public healthcare funds—hard-earned money paid by taxpayers, meant for the poorest citizens to receive life-saving surgeries and critical treatments—disappear into the black hole of healthcare fraud. Hospitals submit bills for procedures that never occurred. Patient identities are cloned to exhaust benefit balances. While corrupt parties get rich, honest citizens are denied care when they need it most."*
+---
 
-This is not just a corporate problem. It is a **human problem** that affects families, communities, and lives.
+## 💡 The Human Story: Why I Built This
+
+> *"Every single year, billions in public healthcare funds—hard-earned money paid by taxpayers, meant for the poorest citizens to receive life-saving surgeries and critical treatments—disappear into the black hole of healthcare fraud. Hospitals submit bills for procedures that never occurred. Patient identities are cloned to exhaust benefit balances. While corrupt parties get rich, honest citizens are denied care when they need it most."*
+
+This is not a corporate problem. It is a **human problem** that directly affects families, communities, and human lives.
 
 ### The Creator's Vision
 As a developer, I wanted to build more than just another portfolio app. I wanted to build a **shield** for public funds. **HCAFIP** was born out of a desire to harness modern AI and Machine Learning to detect fraudulent insurance claims **in real time**, before government money is disbursed. 
@@ -66,17 +79,17 @@ Check out the full application walkthrough showing HCAFIP in action detecting fr
 ### 📺 Watch the Total Project Walkthrough Video:
 [![Watch Demo](https://img.shields.io/badge/▶_Watch_Full_Demo_Video-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://hcafip-full-stack-healthcare-fraud.vercel.app/)
 
-*(Click the badge above to watch the full project in action, explaining each user role and fraud detection flow!)*
+*(Click the badge above to watch the full walkthrough of the project and see how it works end-to-end!)*
 
 ---
 
-## 👥 Multi-Role User Simulation
+## 👥 User Simulation & Interactive Roles
 
 The application features a robust Role-Based Access Control (RBAC) system. You can try the **[Live Demo](https://hcafip-full-stack-healthcare-fraud.vercel.app/)** with these accounts:
 
 | Role | Username | Password | Purpose & Capabilities |
 | :--- | :--- | :--- | :--- |
-| 🏛️ **Government Admin** | `gov_admin` | `admin123` | High-level analytics, budget consumption maps, patient registry, claim approval/rejection |
+| 🏛️ **Government Admin** | `gov_admin` | `admin123` | High-level analytics, **Geospatial Fraud Heatmaps**, patient registry, claim approval/rejection |
 | 🔍 **Fraud Investigator** | `investigator` | `intel123` | Interactive fraud queue, real-time alert triage, and **Gemini AI chatbot** for specific claim investigations |
 | 🏥 **Hospital Provider** | `hosp_city` | `city123` | Submit claims, use **OCR Bill Scanning** to parse files, and view recent submissions |
 | 👤 **Patient** | `patient_john` | `john123` | Track your active health scheme balances, check claim status, and ensure your identity isn't being misused |
@@ -90,6 +103,10 @@ The application features a robust Role-Based Access Control (RBAC) system. You c
 *   **Rule-Based Flags:** Flags claims instantly for common red flags, such as duplicate procedures within a short period, exceeding maximum category limits, or mismatched patient records.
 *   **Google Gemini AI Assistant:** Integrated chat interface allowing fraud investigators to consult Gemini on complex claims. Gemini parses the claim data, compares historical patient files, and provides an explainable fraud report.
 
+### 🗺️ Interactive Geographic Map
+*   **Geospatial Fraud Heatmap:** Visualizes hospital claim distributions, threat rates, and average risk rating on an interactive Leaflet map.
+*   **Radar threat levels:** Color-coded pulsing pins indicating high-risk zones, giving government admins a macro-view of systemic leakages.
+
 ### 🧾 OCR Medical Bill Scanner
 *   Hospitals can upload a receipt or bill photo.
 *   The built-in OCR service (powered by Gemini Vision) extracts patient name, treatment type, cost, and dates, pre-filling the claim form automatically to eliminate manual errors and falsified text inputs.
@@ -100,12 +117,12 @@ The application features a robust Role-Based Access Control (RBAC) system. You c
 
 ---
 
-## 🏗️ Architecture Flow
+## 🏗️ System Architecture Flow
 
 ```
                      ┌─────────────────────────────────────────┐
                      │            FRONTEND (Vercel)            │
-                     │  React + Vite | Tailwind & Vanilla CSS  │
+                     │  React + Vite | Leaflet Maps | Tailwind  │
                      │  RBAC: Admin | Investigator | Hosp | Pat│
                      └────────────────────┬────────────────────┘
                                            │ HTTPS REST API + JWT
@@ -182,13 +199,6 @@ npm run dev
 ```
 > The React app will start at: **http://localhost:5173**
 
-### 5. Run Automated Tests
-Keep the code robust by running the automated pytest suite:
-```bash
-cd backend
-pytest tests/ -v
-```
-
 ---
 
 ## 🔭 Future Scope (Real-World Extensions)
@@ -197,10 +207,20 @@ This platform was built to serve as a rock-solid, production-grade foundation. F
 
 *   🔒 **Aadhaar / Identity KYC Integration:** Add multi-factor authentication linking patient logins to official government IDs (e.g., Aadhaar, DigiLocker) to prevent medical identity theft.
 *   🔗 **Blockchain Audit Trail:** Log all claim approval and rejection events onto an immutable blockchain ledger (like Hyperledger Fabric), ensuring government auditors can trust every decision history.
-*   🗺️ **Geographic Fraud Heatmaps:** Implement a Leaflet or Google Maps dashboard view highlighting clusters of high-risk claims, pinpointing specific hospitals committing systematic geographic fraud.
+*   🗺️ **Advanced Geospatial Analytics:** Build density spatial maps using geo-fencing to detect if patients are claiming benefits from hospitals hundreds of miles away from their registered home coordinates.
 *   📊 **Big Data Pipelines:** Upgrade the backend database from SQLite to PostgreSQL and build Apache Spark/Kafka pipelines to scan millions of claims per second.
 *   🇮🇳 **Multi-Lingual support:** Localize the portal in Hindi, Telugu, Tamil, and other regional languages to make it accessible to local administrative bodies.
-*   📱 **Patient Alert System:** Automatic SMS or WhatsApp alerts to patients immediately when a claim is initiated under their ID to verify they are actually at the hospital.
+*   📱 **Patient SMS Alerts**: Implement automated WhatsApp/SMS notifications requesting patients to confirm their presence at the hospital when a claim is created.
+
+---
+
+## 🧪 Automated Tests
+
+Keep the codebase robust by running the automated backend test suite:
+```bash
+cd backend
+pytest tests/ -v
+```
 
 ---
 
