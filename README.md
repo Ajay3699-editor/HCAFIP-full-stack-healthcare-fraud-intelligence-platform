@@ -83,6 +83,32 @@ Check out the full application walkthrough showing HCAFIP in action detecting fr
 
 ---
 
+## 🚶‍♂️ Step-by-Step Workflow Walkthrough
+
+Here is exactly how the platform secures public healthcare money, visualized through the system portals:
+
+### 1. Government Admin: System Overview & Analytics
+*   **What happens**: The Government Admin logs in (`gov_admin` / `admin123`) to access the **System Overview** dashboard. This panel presents real-time aggregate data, including total claims submitted, approved payouts, average risk ratings, and dynamic charts for monthly spending and registered patient growth. It also highlights saved/blocked fraud leakage amounts and a breakdown of triggered fraud rules.
+*   **Visual Demonstration**:
+    ![System Overview Dashboard](./docs/assets/overview.png)
+
+### 2. Government Admin: Interactive Claim Triage Console
+*   **What happens**: The Admin navigates to the **Manage Claims** tab. All claims submitted by hospitals are triaged in real time. Each claim is stamped with patient information, procedural details, and an automated Machine Learning **Risk Score**. The Admin can instantly **Approve** or **Reject** a claim to allow or block payouts.
+*   **Visual Demonstration**:
+    ![Manage Claims Console](./docs/assets/manage_claims.png)
+
+### 3. Government Admin: Geospatial Fraud Radar Map
+*   **What happens**: The Admin views the **Fraud Hotspots Map**. Powered by Leaflet.js, it translates hospital addresses into geographic coordinates, showing pulsing threat markers (Green = Safe, Orange = Caution, Red = High Risk) and risk radius rings. This allows administrators to quickly identify clusters of systematic regional billing fraud.
+*   **Visual Demonstration**:
+    ![Geospatial Fraud Heatmap](./docs/assets/fraud_map.png)
+
+### 4. Patient Portal: Identity Protection & Balance Tracker
+*   **What happens**: Patients log in (e.g., `patient_john` / `john123`) to access their **My Portal** dashboard. They can monitor their active government benefit card balances across different schemes, view their medical treatment history, and verify that no fraudulent hospital claims are being processed under their cloned health IDs.
+*   **Visual Demonstration**:
+    ![Patient Insurance Portal](./docs/assets/patient_portal.png)
+
+---
+
 ## 👥 User Simulation & Interactive Roles
 
 The application features a robust Role-Based Access Control (RBAC) system. You can try the **[Live Demo](https://hcafip-full-stack-healthcare-fraud.vercel.app/)** with these accounts:
