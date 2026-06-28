@@ -4,7 +4,7 @@
 <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/80728820-e06b-4f96-9c9e-9df46f0cc0a5" width="800" alt="HCAFIP Banner" />
 
 # 🏥 HCAFIP
-### Healthcare Claim Assurance & Fraud Intelligence Portal
+### Healthcare Claim Assurance & Fraud Intelligence Portal.
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&width=600&lines=AI-Powered+Healthcare+Fraud+Detection;Real-Time+Risk+Scoring+with+ML;Geospatial+Fraud+Heatmaps;Gemini+AI+Fraud+Investigation;Saving+Public+Money+and+Taxpayer+Funds" alt="Typing SVG" />
 
